@@ -20,5 +20,23 @@ public class Principal {
         produto3.quantidade = 8;
 
         produto3.imprimeDados();
+
+        Endereco endereco = new Endereco();
+        endereco.rua = "Pedro Alvares Cabral";
+        endereco.numero = 131;
+        endereco.complemento = "casa 2";
+        endereco.bairro = "Centro";
+        endereco.cidade = "São Paulo";
+        endereco.estado = "SP";
+
+        Cliente cliente = new Cliente();
+        cliente.nome = "Fabiano";
+        cliente.cpf = "111.222.333-44";
+        cliente.email = "fabiano@email.com";
+        cliente.profissao = "Desenvolvedor";
+        cliente.telefone = "11999999999";
+        cliente.endereco = endereco;
+
+        System.out.println("O cliente " + cliente.nome + " tem o CPF " + cliente.cpf + " e reside na Rua " + cliente.endereco.rua + " na cidade de " + cliente.endereco.cidade );
     }
 }
