@@ -2,22 +2,20 @@ package br.com.alura.comex.semana4;
 
 public class Principal {
     public static void main(String[] args) {
-        Produto produto = new Produto();
-        produto.nome = "Celular S30";
-        produto.descricao = "celular com 48MB, tela 7 polegadas e bateria de 6000 amperes.";
-        produto.precoUnitario = 2500.50;
-        produto.quantidade = 12;
+        Produto produto = new Produto("Celular S30");
+        produto.setDescricao("celular com 48MB, tela 7 polegadas e bateria de 6000 amperes.");
+        produto.setPrecoUnitario(2500.50);
+        produto.setQuantidade(12);
 
-        System.out.println("O nome do produto é " + produto.nome);
-        System.out.println("Descrição: " + produto.descricao);
-        System.out.println("O valor de cada unidade é R$ " + produto.precoUnitario);
-        System.out.println("Temos em estoque " + produto.quantidade + " unidades.");
+        System.out.println("O nome do produto é " + produto.getNome());
+        System.out.println("Descrição: " + produto.getDescricao());
+        System.out.println("O valor de cada unidade é R$ " + produto.getPrecoUnitario());
+        System.out.println("Temos em estoque " + produto.getQuantidade() + " unidades.");
 
-        Produto produto3 = new Produto();
-        produto3.nome = "Geladeira Brastemp";
-        produto3.descricao = "FrostFree 240 litros duplex bivolt";
-        produto3.precoUnitario = 5500.00;
-        produto3.quantidade = 8;
+        Produto produto3 = new Produto("Geladeira Brastemp");
+        produto3.setDescricao("FrostFree 240 litros duplex bivolt");
+        produto3.setPrecoUnitario(5500.00);
+        produto3.setQuantidade(8);
 
         produto3.imprimeDados();
 
