@@ -18,5 +18,6 @@ public class Teste {
         }else{
             System.out.println("Os objetos não são idênticos, eles possuem referências diferentes");
         }
+
     }
 }

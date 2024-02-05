@@ -36,5 +36,10 @@ public class Principal {
         cliente.endereco = endereco;
 
         System.out.println("O cliente " + cliente.nome + " tem o CPF " + cliente.cpf + " e reside na Rua " + cliente.endereco.rua + " na cidade de " + cliente.endereco.cidade );
+
+        ListaDeDesejos lista = new ListaDeDesejos();
+        lista.adicionarProduto(produto);
+        lista.adicionarProduto(produto3);
+        lista.imprimeProdutos();
     }
 }

@@ -37,6 +37,11 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    @Override
+    public String toString() {
+        return "Produto: " + this.getNome();
+    }
+
     public void imprimeDados(){
         System.out.println(">>> Dados do produto");
         System.out.println("Nome: " + this.nome);
