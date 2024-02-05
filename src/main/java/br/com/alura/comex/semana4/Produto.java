@@ -5,4 +5,10 @@ public class Produto {
     String descricao;
     double precoUnitario;
     int quantidade;
+
+    public void imprimeDados(){
+        System.out.println(">>> Dados do produto");
+        System.out.println("Nome: " + nome);
+        System.out.println("Descrição: "+ descricao);
+    }
 }
