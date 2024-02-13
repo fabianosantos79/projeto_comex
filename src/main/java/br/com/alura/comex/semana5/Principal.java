@@ -1,5 +1,7 @@
 package br.com.alura.comex.semana5;
 
+import javax.swing.text.TableView;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
@@ -30,6 +32,11 @@ public class Principal {
         Scanner leitura = new Scanner(System.in);
         System.out.println("Digite um número para idFilme");
         idFilme = leitura.nextInt();
-        System.out.println("O valor de idFilme é: "+ idFilme);
+        try {
+            System.out.println("O valor de idFilme é: "+ idFilme);
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Você deve inserir somente números." + e.getMessage());
+        }
     }
 }
