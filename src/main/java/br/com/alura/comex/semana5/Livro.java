@@ -1,6 +1,6 @@
 package br.com.alura.comex.semana5;
 
-public class Livro extends Produto{
+public class Livro extends Produto implements Identificavel{
     private String isbn;
     private int totalDePaginas;
 
@@ -21,5 +21,11 @@ public class Livro extends Produto{
     }
     public void setTotalDePaginas(int totalDePaginas) {
         this.totalDePaginas = totalDePaginas;
+    }
+
+    @Override
+    public String getIdentificacao() {
+        System.out.println("Nome: " + this.getNome() + " - ISBN: " + this.getIsbn());
+        return null;
     }
 }

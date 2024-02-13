@@ -1,6 +1,6 @@
 package br.com.alura.comex.semana5;
 
-public class Eletronico extends Produto{
+public class Eletronico extends Produto {
     private int voltagem;
     private int potencia;
 

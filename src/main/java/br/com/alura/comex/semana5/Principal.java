@@ -15,5 +15,12 @@ public class Principal {
         livro1.setPrecoUnitario(42);
         System.out.println("Descrição do Livro: " + livro1.getDescricao());
         System.out.println(livro1.toString());
+        livro1.getIdentificacao();
+
+        Cliente cliente1 = new Cliente();
+        cliente1.setNome("Fulano");
+        cliente1.setCpf("11122233344");
+        cliente1.setTelefone("11 9999-9999");
+        cliente1.getIdentificacao();
     }
 }
