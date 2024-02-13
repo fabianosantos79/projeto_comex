@@ -1,12 +1,13 @@
 package br.com.alura.comex.semana5;
 
 import javax.swing.text.TableView;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
-    public static void main(String[] args) {
-        Eletronico eletro1 = new Eletronico("Radio",110, 200 );
+    public static void main(String[] args) throws IOException {
+        Eletronico eletro1 = new Eletronico("Radio", 110, 200);
         eletro1.setDescricao("Radio AM/FM com CD e voltagem 110 e potencia 200W");
         eletro1.setQuantidade(2);
         eletro1.setPrecoUnitario(150);
@@ -28,15 +29,16 @@ public class Principal {
         cliente1.getIdentificacao();
 
         int idFilme;
+        Scanner leitura = null;
+        System.out.println("Digite uma nota para o filme");
 
-        Scanner leitura = new Scanner(System.in);
-        System.out.println("Digite um número para idFilme");
-        idFilme = leitura.nextInt();
         try {
-            System.out.println("O valor de idFilme é: "+ idFilme);
+            leitura = new Scanner(System.in);
+            idFilme = leitura.nextInt();
+            System.out.println("O número do idFilme é: " + idFilme);
         }
-        catch (InputMismatchException e) {
-            System.out.println("Você deve inserir somente números." + e.getMessage());
+        catch(InputMismatchException e){
+            System.out.println("Erro - Você precisa digitar somente números");
         }
     }
 }
