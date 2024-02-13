@@ -1,5 +1,7 @@
 package br.com.alura.comex.semana5;
 
+import java.util.Scanner;
+
 public class Principal {
     public static void main(String[] args) {
         Eletronico eletro1 = new Eletronico("Radio",110, 200 );
@@ -22,5 +24,12 @@ public class Principal {
         cliente1.setCpf("11122233344");
         cliente1.setTelefone("11 9999-9999");
         cliente1.getIdentificacao();
+
+        int idFilme;
+
+        Scanner leitura = new Scanner(System.in);
+        System.out.println("Digite um número para idFilme");
+        idFilme = leitura.nextInt();
+        System.out.println("O valor de idFilme é: "+ idFilme);
     }
 }
