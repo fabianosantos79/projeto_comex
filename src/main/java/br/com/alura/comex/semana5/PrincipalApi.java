@@ -1,5 +1,7 @@
 package br.com.alura.comex.semana5;
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -22,5 +24,7 @@ public class PrincipalApi {
         String json = response.body();
 
         System.out.println(json);
+
+        Gson gson = new Gson();
     }
 }
