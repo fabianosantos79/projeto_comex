@@ -1,6 +1,6 @@
-package br.com.alura.comex.semana5;
+package br.com.alura.comex.semana5.modelos;
 
-public class Livro extends Produto implements Identificavel{
+public class Livro extends Produto implements Identificavel {
     private String isbn;
     private int totalDePaginas;
 

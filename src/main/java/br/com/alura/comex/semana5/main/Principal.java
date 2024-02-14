@@ -1,6 +1,9 @@
-package br.com.alura.comex.semana5;
+package br.com.alura.comex.semana5.main;
 
-import javax.swing.text.TableView;
+import br.com.alura.comex.semana5.modelos.Cliente;
+import br.com.alura.comex.semana5.modelos.Eletronico;
+import br.com.alura.comex.semana5.modelos.Livro;
+
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;

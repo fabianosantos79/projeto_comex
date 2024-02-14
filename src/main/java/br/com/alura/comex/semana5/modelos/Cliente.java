@@ -1,5 +1,6 @@
-package br.com.alura.comex.semana5;
-public class Cliente implements Identificavel{
+package br.com.alura.comex.semana5.modelos;
+
+public class Cliente implements Identificavel {
     String nome;
     String cpf;
     String telefone;

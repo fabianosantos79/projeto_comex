@@ -1,4 +1,4 @@
-package br.com.alura.comex.semana5;
+package br.com.alura.comex.semana5.modelos;
 
 public class Eletronico extends Produto {
     private int voltagem;

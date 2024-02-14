@@ -1,4 +1,4 @@
-package br.com.alura.comex.semana5;
+package br.com.alura.comex.semana5.excecao;
 
 import java.io.IOException;
 import java.util.Scanner;

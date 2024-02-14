@@ -1,4 +1,4 @@
-package br.com.alura.comex.semana5;
+package br.com.alura.comex.semana5.api;
 
 public class ProductApi {
     private int id;

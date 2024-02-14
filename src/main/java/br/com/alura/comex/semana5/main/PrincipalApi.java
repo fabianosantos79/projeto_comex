@@ -1,5 +1,7 @@
-package br.com.alura.comex.semana5;
+package br.com.alura.comex.semana5.main;
 
+import br.com.alura.comex.semana5.api.APIConverter;
+import br.com.alura.comex.semana5.api.ProductApi;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
